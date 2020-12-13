@@ -1,25 +1,27 @@
 :root {
-	--backgroundColor: #ffffff;
-	--mainAccentColor: #4007aa;
-	--primaryTextColor: #170d0d;
+  --backgroundColor: #ffffff;
+  --mainAccentColor: #4007aa;
+  --primaryTextColor: #170d0d;
 }
 
 :root {
-	--space-m: 50px;
+  --space-m: 50px;
 }
 
 body {
-	background-color: var(--backgroundColor);
-	margin: 0;
-  font-family: 'Quicksand', sans-serif, -apple-system, BlinkMacSystemFont;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  background-color: var(--backgroundColor);
+  margin: 0;
+  font-family: "Quicksand", sans-serif, -apple-system, BlinkMacSystemFont;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 button {
-	font-family: inherit;
+  all: unset;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 p {
-	margin: 0;
+  margin: 0;
 }
