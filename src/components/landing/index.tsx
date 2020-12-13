@@ -11,10 +11,6 @@ const LandingPage = () => (
   <div className={styles.container}>
     <div className={styles.content_container}>
       <Font fontType={FontType.headline1}>web development and design</Font>
-      <Spacer v={SpaceValue.m}></Spacer>
-      <button className={styles.button} onClick={onContactClick}>
-        <Font fontType={FontType.body1}>say hello</Font>
-      </button>
     </div>
   </div>
 );
