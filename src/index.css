@@ -1,0 +1,25 @@
+:root {
+	--backgroundColor: #ffffff;
+	--mainAccentColor: #4007aa;
+	--primaryTextColor: #170d0d;
+}
+
+:root {
+	--space-m: 50px;
+}
+
+body {
+	background-color: var(--backgroundColor);
+	margin: 0;
+  font-family: 'Quicksand', sans-serif, -apple-system, BlinkMacSystemFont;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+button {
+	font-family: inherit;
+}
+
+p {
+	margin: 0;
+}
