@@ -1,4 +1,3 @@
-import { Spacer, SpaceValue } from "components/spacer";
 import { Font, FontType } from "fonts";
 import React from "react";
 import styles from "./styles.module.css";
