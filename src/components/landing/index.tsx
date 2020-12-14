@@ -1,48 +1,60 @@
 import { Font, FontType } from "fonts";
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import styles from "./styles.module.css";
 
 const animationDuration = 700;
-const headerDisplayDuration = 7000;
+const headlineDisplayDuration = 7000;
 
 const headlines = [
   "web development done right",
   "excellent piece of maintainable software",
-  "delivering solid products that scale",
-  "9 agency",
+  "delivering products that scale",
+  "making great apps with you",
 ];
 
 export const LandingPage = () => {
+  const [activeHeadline, setActiveHeadline] = useState(headlines[0]);
+
   const [buttonClassName, setButtonClassName] = useState(
     `${styles.button} ${styles.zeroOpacity}`
   );
 
-  const [activeHeadline, setActiveHeadline] = useState(headlines[0]);
+  const fadeHeadlineIn = useCallback(() => {
+    setButtonClassName(`${styles.button} ${styles.fadeIn}`);
+  }, []);
+
+  const fadeHeadlineOut = useCallback(() => {
+    setButtonClassName(`${styles.button} ${styles.fadeOut}`);
+  }, []);
+
+  const changeHeadline = useCallback(() => {
+    fadeHeadlineOut();
+    setTimeout(() => {
+      setActiveHeadline((activeHeadline) => {
+        const activeHeadlineIndex = headlines.indexOf(activeHeadline);
+        return headlines[(activeHeadlineIndex + 1) % headlines.length];
+      });
+      fadeHeadlineIn();
+    }, animationDuration);
+  }, [fadeHeadlineIn, fadeHeadlineOut]);
 
   useEffect(() => {
     (document as any).fonts.ready.then(() => {
-      setButtonClassName(`${styles.button} ${styles.fadeIn}`);
-
       let changeHeadlineInterval: NodeJS.Timeout;
 
+      fadeHeadlineIn();
       setTimeout(() => {
-        changeHeadlineInterval = setInterval(() => {
-          setButtonClassName(`${styles.button} ${styles.fadeOut}`);
-          setTimeout(() => {
-            setActiveHeadline((activeHeadline) => {
-              const activeHeadlineIndex = headlines.indexOf(activeHeadline);
-              return headlines[(activeHeadlineIndex + 1) % headlines.length];
-            });
-            setButtonClassName(`${styles.button} ${styles.fadeIn}`);
-          }, animationDuration);
-        }, headerDisplayDuration);
+        changeHeadlineInterval = setInterval(
+          changeHeadline,
+          headlineDisplayDuration + 2 * animationDuration
+        );
       }, animationDuration);
 
       return () => {
         clearInterval(changeHeadlineInterval);
       };
     });
-  }, []);
+  }, [fadeHeadlineIn, changeHeadline]);
 
   return (
     <div className={styles.container}>
