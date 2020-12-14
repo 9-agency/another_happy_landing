@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+  padding: 0px 20px;
 }
 
 .button {
@@ -21,7 +22,6 @@
     font-size: 52px;
   }
 }
-
 
 .fadeIn {
   opacity: 0;
