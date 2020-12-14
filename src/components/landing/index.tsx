@@ -13,12 +13,9 @@ export const LandingPage = () => {
 
   return (
     <div className={styles.container}>
-      <button
-        className={buttonClassName}
-        onClick={() => (window.location.href = "mailto:hello@9.agency")}
-      >
+      <a className={buttonClassName} href="mailto:hello@9.agency">
         <Font fontType={FontType.headline1}>web design and development</Font>
-      </button>
+      </a>
     </div>
   );
 };

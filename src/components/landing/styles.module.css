@@ -4,37 +4,37 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 0px 20px;
 }
 
 .button {
-  text-align: center;
+  padding: 20px;
   opacity: 0;
 }
 
 .button p {
   text-align: center;
-  transition: font-size linear 200ms;
   user-select: none;
+  transition: transform ease-out 250ms;
 }
 
-@media (pointer: fine) {
-  .button:hover p {
-    font-size: 52px;
-  }
+.button:hover p {
+  transform: scale(1.03, 1.03);
 }
 
 .fadeIn {
   animation-name: fadeIn;
   animation-fill-mode: forwards;
-  animation-duration: 1000ms;
+  animation-duration: 900ms;
 }
 
 @keyframes fadeIn {
   from {
     opacity: 0;
+    transform: translateX(-1%);
   }
+
   to {
     opacity: 1;
+    transform: translateX(10);
   }
 }
