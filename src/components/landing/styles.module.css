@@ -9,6 +9,7 @@
 
 .button {
   text-align: center;
+  opacity: 0;
 }
 
 .button p {
@@ -24,7 +25,6 @@
 }
 
 .fadeIn {
-  opacity: 0;
   animation-name: fadeIn;
   animation-fill-mode: forwards;
   animation-duration: 1000ms;

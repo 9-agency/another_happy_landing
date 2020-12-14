@@ -1,16 +1,24 @@
 import { Font, FontType } from "fonts";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./styles.module.css";
 
-const LandingPage = () => (
-  <div className={styles.container}>
-    <button
-      className={`${styles.button} ${styles.fadeIn}`}
-      onClick={() => (window.location.href = "mailto:hello@9.agency")}
-    >
-      <Font fontType={FontType.headline1}>web design and development</Font>
-    </button>
-  </div>
-);
+export const LandingPage = () => {
+  const [buttonClassName, setButtonClassName] = useState(styles.button);
 
-export default LandingPage;
+  useEffect(() => {
+    (document as any).fonts.ready.then(() => {
+      setButtonClassName((className) => `${className} ${styles.fadeIn}`);
+    });
+  }, []);
+
+  return (
+    <div className={styles.container}>
+      <button
+        className={buttonClassName}
+        onClick={() => (window.location.href = "mailto:hello@9.agency")}
+      >
+        <Font fontType={FontType.headline1}>web design and development</Font>
+      </button>
+    </div>
+  );
+};
