@@ -5,17 +5,17 @@ import styles from "./styles.module.css";
 const animationDuration = 700;
 const headerDisplayDuration = 7000;
 
+const headlines = [
+  "web development done right",
+  "excellent piece of maintainable software",
+  "delivering solid products that scale",
+  "9 agency",
+];
+
 export const LandingPage = () => {
   const [buttonClassName, setButtonClassName] = useState(
     `${styles.button} ${styles.zeroOpacity}`
   );
-
-  const headlines = [
-    "web development done right",
-    "excellent piece of maintainable software",
-    "delivering solid products that scale",
-    "9 agency",
-  ];
 
   const [activeHeadline, setActiveHeadline] = useState(headlines[0]);
 
