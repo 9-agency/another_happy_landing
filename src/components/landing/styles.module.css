@@ -16,9 +16,12 @@
   user-select: none;
 }
 
-.button:hover p {
-  font-size: 52px;
+@media (pointer: fine) {
+  .button:hover p {
+    font-size: 52px;
+  }
 }
+
 
 .fadeIn {
   opacity: 0;
