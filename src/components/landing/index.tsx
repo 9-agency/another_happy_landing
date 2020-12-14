@@ -5,7 +5,7 @@ import styles from "./styles.module.css";
 const LandingPage = () => (
   <div className={styles.container}>
     <button
-      className={styles.button}
+      className={`${styles.button} ${styles.fadeIn}`}
       onClick={() => (window.location.href = "mailto:hello@9.agency")}
     >
       <Font fontType={FontType.headline1}>web design and development</Font>
