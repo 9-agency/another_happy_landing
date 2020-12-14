@@ -13,6 +13,7 @@
 .button p {
   text-align: center;
   transition: font-size linear 200ms;
+  user-select: none;
 }
 
 .button:hover p {
