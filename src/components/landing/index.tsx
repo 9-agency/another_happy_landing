@@ -1,4 +1,5 @@
 import { Font, FontType } from "fonts";
+import { shuffleArray } from "helpers";
 import React, { useCallback, useEffect, useState } from "react";
 import styles from "./styles.module.css";
 
@@ -7,9 +8,12 @@ const headlineDisplayDuration = 7000;
 
 const headlines = [
   "web development done right",
-  "excellent piece of maintainable software",
-  "delivering products that scale",
-  "making great apps with you",
+  ...shuffleArray([
+    "excellent piece of maintainable software",
+    "delivering products that scale",
+    "making great apps with you",
+    "stable growth with user experience in mind",
+  ]),
 ];
 
 export const LandingPage = () => {
