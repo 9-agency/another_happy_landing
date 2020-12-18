@@ -20,15 +20,15 @@ export const Headline = () => {
   const [activeHeadline, setActiveHeadline] = useState(headlines[0]);
 
   const [headlineClassName, setHeadlineClassName] = useState(
-    `${styles.button} zeroOpacity`
+    `${styles.headline} zeroOpacity`
   );
 
   const fadeHeadlineIn = useCallback(() => {
-    setHeadlineClassName(`${styles.button} fadeIn`);
+    setHeadlineClassName(`${styles.headline} fadeIn`);
   }, []);
 
   const fadeHeadlineOut = useCallback(() => {
-    setHeadlineClassName(`${styles.button} fadeOut`);
+    setHeadlineClassName(`${styles.headline} fadeOut`);
   }, []);
 
   const changeHeadline = useCallback(() => {
