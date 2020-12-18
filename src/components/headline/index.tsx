@@ -16,7 +16,7 @@ const headlines = [
   ]),
 ];
 
-export const LandingPage = () => {
+export const Headline = () => {
   const [activeHeadline, setActiveHeadline] = useState(headlines[0]);
 
   const [buttonClassName, setButtonClassName] = useState(

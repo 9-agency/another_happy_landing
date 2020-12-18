@@ -1,9 +1,8 @@
 import React from "react";
-import { LandingPage } from "components/landing";
-import styles from "./styles.module.css";
+import { Headline } from "components/headline";
 
 export const App = () => (
-  <div className={styles.main_container}>
-    <LandingPage></LandingPage>
-  </div>
+  <>
+    <Headline />
+  </>
 );
