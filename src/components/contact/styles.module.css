@@ -1,0 +1,21 @@
+.container {
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container p {
+  color: white;
+}
+
+.button p {
+  transition: transform ease-out 250ms;
+  user-select: initial;
+}
+
+.button:hover p {
+  transform: scale(1.03, 1.03);
+}

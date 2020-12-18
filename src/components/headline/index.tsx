@@ -19,16 +19,16 @@ const headlines = [
 export const Headline = () => {
   const [activeHeadline, setActiveHeadline] = useState(headlines[0]);
 
-  const [buttonClassName, setButtonClassName] = useState(
+  const [headlineClassName, setHeadlineClassName] = useState(
     `${styles.button} ${styles.zeroOpacity}`
   );
 
   const fadeHeadlineIn = useCallback(() => {
-    setButtonClassName(`${styles.button} ${styles.fadeIn}`);
+    setHeadlineClassName(`${styles.button} ${styles.fadeIn}`);
   }, []);
 
   const fadeHeadlineOut = useCallback(() => {
-    setButtonClassName(`${styles.button} ${styles.fadeOut}`);
+    setHeadlineClassName(`${styles.button} ${styles.fadeOut}`);
   }, []);
 
   const changeHeadline = useCallback(() => {
@@ -62,9 +62,9 @@ export const Headline = () => {
 
   return (
     <div className={styles.container}>
-      <a className={buttonClassName} href="mailto:hello@9.agency">
-        <Font fontType={FontType.headline1}>{activeHeadline}</Font>
-      </a>
+      <Font className={headlineClassName} fontType={FontType.headline1}>
+        {activeHeadline}
+      </Font>
     </div>
   );
 };

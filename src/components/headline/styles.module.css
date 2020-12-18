@@ -9,18 +9,8 @@
   opacity: 0;
 }
 
-.button {
+.headline {
   padding: 20px;
-}
-
-.button p {
-  text-align: center;
-  user-select: none;
-  transition: transform ease-out 250ms;
-}
-
-.button:hover p {
-  transform: scale(1.03, 1.03);
 }
 
 .fadeIn,
