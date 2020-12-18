@@ -1,8 +1,8 @@
-import { Headline } from "components/headline";
-import { Services } from "components/services";
-import { Projects } from "components/projects";
-import { Careers } from "components/careers";
-import { Contact } from "components/contact";
+import { Headline } from "components/Headline";
+import { Services } from "components/Services";
+import { Projects } from "components/Projects";
+import { Careers } from "components/Careers";
+import { Contact } from "components/Contact";
 
 export const App = () => (
   <>

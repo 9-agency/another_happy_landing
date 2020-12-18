@@ -1,0 +1,50 @@
+.zeroOpacity {
+  opacity: 0;
+}
+
+.fadeIn,
+.fadeOut {
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  animation-duration: 700ms;
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+.fadeOut {
+  animation-name: fadeOut;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-1%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateX(1%);
+  }
+}
+
+.scaleUpOnHover {
+  transition: transform ease-out 250ms;
+}
+
+.scaleUpOnHover:hover {
+  transform: scale(1.03, 1.03);
+}

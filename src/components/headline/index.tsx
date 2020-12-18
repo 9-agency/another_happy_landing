@@ -1,4 +1,4 @@
-import { Font, FontType } from "fonts";
+import { Label } from "components/Label";
 import { shuffleArray } from "helpers";
 import React, { useCallback, useEffect, useState } from "react";
 import styles from "./styles.module.css";
@@ -20,15 +20,15 @@ export const Headline = () => {
   const [activeHeadline, setActiveHeadline] = useState(headlines[0]);
 
   const [headlineClassName, setHeadlineClassName] = useState(
-    `${styles.button} ${styles.zeroOpacity}`
+    `${styles.button} zeroOpacity`
   );
 
   const fadeHeadlineIn = useCallback(() => {
-    setHeadlineClassName(`${styles.button} ${styles.fadeIn}`);
+    setHeadlineClassName(`${styles.button} fadeIn`);
   }, []);
 
   const fadeHeadlineOut = useCallback(() => {
-    setHeadlineClassName(`${styles.button} ${styles.fadeOut}`);
+    setHeadlineClassName(`${styles.button} fadeOut`);
   }, []);
 
   const changeHeadline = useCallback(() => {
@@ -62,9 +62,9 @@ export const Headline = () => {
 
   return (
     <div className={styles.container}>
-      <Font className={headlineClassName} fontType={FontType.headline1}>
+      <Label className={headlineClassName} font="headline1">
         {activeHeadline}
-      </Font>
+      </Label>
     </div>
   );
 };

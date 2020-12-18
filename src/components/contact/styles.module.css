@@ -11,11 +11,6 @@
   color: white;
 }
 
-.button p {
-  transition: transform ease-out 250ms;
+.headline {
   user-select: initial;
-}
-
-.button:hover p {
-  transform: scale(1.03, 1.03);
 }
