@@ -7,10 +7,12 @@ const animationDuration = 300;
 const headlineDisplayDuration = 4000;
 
 const headlines = [
-	// "web development done right",
+  // "web development done right",
+  
+  "software development agency",
 	"building scalable solutions",
 	"providing great user experience",
-	"ensuring product quality",
+  "ensuring product quality",
 
 	// "high-quality software",
 
