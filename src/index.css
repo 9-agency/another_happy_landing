@@ -1,38 +1,36 @@
 :root {
-  --backgroundColor: #ffffff;
-  --mainAccentColor: #4007aa;
-  --primaryTextColor: #170d0d;
+	--backgroundColor: #ffffff;
+	--mainAccentColor: #4007aa;
+	--primaryTextColor: #343030;
 }
 
 :root {
-  --space-m: 50px;
-}
-
-#root {
-  width: 100%;
-  height: 100vh;
+	--space-m: 50px;
 }
 
 body {
-  background-color: var(--backgroundColor);
-  margin: 0;
-  font-family: "Quicksand", sans-serif, -apple-system, BlinkMacSystemFont;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	background-color: var(--backgroundColor);
+	margin: 0;
+	font-family: 'Quicksand', sans-serif, -apple-system, BlinkMacSystemFont;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	height: 100vh;
+	overflow: hidden;
 }
 
 button,
 button:focus,
 a {
-  all: unset;
+	all: unset;
 }
 
 button,
 a {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 p {
-  margin: 0;
-  user-select: none;
+	margin: 0;
+	user-select: none;
 }
