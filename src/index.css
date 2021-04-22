@@ -1,7 +1,9 @@
 :root {
-  --backgroundColor: #ffffff;
-  --mainAccentColor: #4007aa;
-  --primaryTextColor: #170d0d;
+  --accent: #FF757E;
+  --light: #EDEDED;
+  --white: white;
+  --black: black;
+  --gray: #BDBDBD;
 }
 
 :root {
@@ -9,11 +11,13 @@
 }
 
 body {
-  background-color: var(--backgroundColor);
+  min-height: 100vh;
+  background: linear-gradient(180deg, #1F1F1F 0%, #080808 100%);
   margin: 0;
   font-family: "Quicksand", sans-serif, -apple-system, BlinkMacSystemFont;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 button,
@@ -29,4 +33,15 @@ a {
 
 p {
   margin: 0;
+}
+
+.grid {
+  margin: 0px 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.grid > * {
+  max-width: 820px;
 }
