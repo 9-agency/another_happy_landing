@@ -1,13 +1,25 @@
+.component {
 
-.main_container {
-    display: -webkit-box;
-	display: -ms-flexbox;
-    display: flex;
-    
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-    justify-content: center;
-    
-	width: 100%;
-	min-height: 100vh;
+}
+
+.header {
+	padding-top: 30px;
+}
+
+.headerLabels p {
+	font-family: Raleway;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 101.1%;
+	/* or 13px */
+
+	display: flex;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.07em;
+	font-variant: small-caps;
+
+	color: var(--light);
+	margin-left: 30px;
 }
