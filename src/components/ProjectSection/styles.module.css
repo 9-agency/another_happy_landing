@@ -1,0 +1,15 @@
+.component {
+	margin-bottom: 180px;
+}
+
+.component p {
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 180%;
+	/* or 29px */
+	
+	letter-spacing: .8px;
+	
+	color: var(--white);
+	margin-bottom: 60px;
+}

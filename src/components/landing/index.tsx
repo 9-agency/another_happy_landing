@@ -2,7 +2,7 @@ import Flex from "components/Flex"
 import Grid from "components/Grid"
 import styles from "./styles.module.css"
 import { ReactComponent as Logo } from "assets/logo.svg"
-import { ReactComponent as IPhone } from "assets/iphone horizontal.svg"
+import { ReactComponent as IPhone } from "assets/iphone_horizontal.svg"
 
 export default () => (
   <div className={styles.component}>

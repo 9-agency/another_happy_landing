@@ -13,7 +13,7 @@
 body {
   background: linear-gradient(180deg, #1F1F1F 0%, #080808 100%);
   margin: 0;
-  font-family: "Quicksand", sans-serif, -apple-system, BlinkMacSystemFont;
+  font-family: Raleway, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -46,4 +46,42 @@ p {
 
 .grid > * {
   max-width: 820px;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 130%;
+  /* identical to box height, or 47px */
+
+  letter-spacing: 0.02em;
+
+  color: var(--light);
+  margin-bottom: 120px;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 130%;
+  /* or 62px */
+
+  letter-spacing: 0.02em;
+
+  color: var(--light);
+  margin-bottom: 28px;
+  max-width: 750px;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  /* identical to box height, or 16px */
+
+  letter-spacing: 0.1em;
+  font-variant: small-caps;
+
+  color: var(--accent);
+  margin-bottom: 30px;
 }
