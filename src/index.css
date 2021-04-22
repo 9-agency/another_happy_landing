@@ -3,7 +3,8 @@
   --light: #EDEDED;
   --white: white;
   --black: black;
-  --gray: #BDBDBD;
+  --light-gray: #BDBDBD;
+  --gray: #5E5E5E;
 }
 
 :root {
