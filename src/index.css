@@ -16,7 +16,10 @@ body {
   font-family: "Quicksand", sans-serif, -apple-system, BlinkMacSystemFont;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
 
+html {
+  scroll-behavior: smooth;
 }
 
 button,

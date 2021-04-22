@@ -4,11 +4,12 @@ import HowWeWork from "components/HowWeWork";
 import Landing from "components/Landing";
 import Mantra from "components/Mantra";
 import V18 from "components/V18";
+import React from "react";
 
 export default () => (
   <>
     <Landing />
-    <V18 />
+    <div id="portfolio"><V18 /></div>
     <HowWeWork />
     <ChessClock />
     <Mantra />
