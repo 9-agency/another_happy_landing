@@ -8,7 +8,7 @@ import { ReactComponent as ScaleSVG } from "assets/scale.svg"
 export default () => (
     <div className={styles.component}>
         <Grid>
-            <h1>How we work</h1>
+            <h1>How we work.</h1>
             <Flex column>
                 <Flex column>
                     <BuildSVG />
