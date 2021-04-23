@@ -24,7 +24,7 @@ const Header = () => (
       <Flex justifyContentSpaceBetween alignItemsCenter>
         <Logo />
         <Flex className={styles.headerLabels}>
-          <a href="#v18">PORTFOLIO</a>
+          <a href="#react">PORTFOLIO</a>
           <a href="mailto:hello@9.agency">CONTACT</a>
         </Flex>
       </Flex>
