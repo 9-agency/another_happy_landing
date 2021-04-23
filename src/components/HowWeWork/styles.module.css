@@ -1,13 +1,19 @@
-
-.main_container {
-    display: -webkit-box;
-	display: -ms-flexbox;
-    display: flex;
-    
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-    justify-content: center;
-    
-	width: 100%;
-	min-height: 100vh;
+.component {
+	margin-bottom: 180px;
 }
+
+.component svg {
+	margin-bottom: 40px;
+}
+
+.component p {
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 158.5%;
+	/* or 25px */
+	
+	letter-spacing: 0.02em;
+	width: 380px;
+	margin-bottom: 120px;
+}
+
