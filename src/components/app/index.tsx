@@ -9,9 +9,9 @@ import V18 from "components/V18";
 export default () => (
   <>
     <div id="landing"><Landing /></div>
-    <div id="v18"><V18 /></div>
+    <div id="react"><V18 /></div>
     <div id="howwework"><HowWeWork /></div>
-    <div id="chessclock"><ChessClock /></div>
+    <div id="pwa"><ChessClock /></div>
     <div id="mantra"><Mantra /></div>
     <Footer />
   </>

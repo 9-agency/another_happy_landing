@@ -2,7 +2,7 @@ import styles from "./styles.module.css"
 import Grid from "components/Grid";
 import Flex from "components/Flex";
 
-const sectionTitles = ["LANDING", "HOW WE WORK", "V18", "CHESS CLOCK", "MANTRA"]
+const sectionTitles = ["LANDING", "HOW WE WORK", "REACT", "PWA", "MANTRA"]
 
 const otherSites = [
     {
