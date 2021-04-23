@@ -36,6 +36,10 @@ a {
   display: block;
 }
 
+a:visited {
+  color: unset;
+}
+
 p {
   margin: 0;
 }

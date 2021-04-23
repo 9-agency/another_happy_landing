@@ -8,11 +8,11 @@ import V18 from "components/V18";
 
 export default () => (
   <>
-    <Landing />
-    <div id="portfolio"><V18 /></div>
-    <HowWeWork />
-    <ChessClock />
-    <Mantra />
-    <div id="footer"><Footer /></div>
+    <div id="landing"><Landing /></div>
+    <div id="v18"><V18 /></div>
+    <div id="howwework"><HowWeWork /></div>
+    <div id="chessclock"><ChessClock /></div>
+    <div id="mantra"><Mantra /></div>
+    <Footer />
   </>
 );

@@ -1,3 +1,12 @@
+.component {
+	margin-bottom: 42px;
+}
+
+.component hr {
+	border-color: var(--accent);
+	margin-bottom: 34px;
+}
+
 .label {
 	font-weight: normal;
 	font-size: 19px;
@@ -12,4 +21,24 @@
 	/* identical to box height, or 53px */
 
 	margin-bottom: 480px;
+}
+
+.link, .linkHeader {
+	font-size: 11px;
+	letter-spacing: 0.04em;
+	line-height: 0px;
+	/* identical to box height, or 0% */
+	margin-bottom: 30px;
+}
+
+.linkHeader {
+	font-weight: 900;
+}
+
+.link {
+	font-weight: 600;
+}
+
+.grid {
+	display: grid;
 }
