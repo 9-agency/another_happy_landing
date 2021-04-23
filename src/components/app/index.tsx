@@ -13,6 +13,6 @@ export default () => (
     <HowWeWork />
     <ChessClock />
     <Mantra />
-    <Footer />
+    <div id="footer"><Footer /></div>
   </>
 );

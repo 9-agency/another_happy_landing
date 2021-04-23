@@ -23,7 +23,7 @@ export default ({ title, project }: Props) => (
             <h2>{project.title}</h2>
             <p>{project.description}</p>
         </Grid>
-        <Flex justifyContentCenter style={{ backgroundColor: "var(--gray)", width: "100%"}} className={styles.projectImageComponent}>
+        <Flex justifyContentCenter style={{ backgroundColor: "var(--gray)", width: "100%" }} className={`${styles.projectImageComponent} scaleOnHover`}>
             <project.ImageComponent />
         </Flex>
     </div>

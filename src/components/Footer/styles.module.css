@@ -1,13 +1,15 @@
+.label {
+	font-weight: normal;
+	font-size: 19px;
+	line-height: 182.5%;
+	/* identical to box height, or 35px */	
+}
 
-.main_container {
-    display: -webkit-box;
-	display: -ms-flexbox;
-    display: flex;
-    
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-    justify-content: center;
-    
-	width: 100%;
-	min-height: 100vh;
+.email {
+	font-weight: 800;
+	font-size: 48px;
+	line-height: 110%;
+	/* identical to box height, or 53px */
+
+	margin-bottom: 480px;
 }

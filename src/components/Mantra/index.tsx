@@ -25,7 +25,7 @@ const sections = [
 ]
 
 export default () => (
-    <div className={styles.component} id="mantra">
+    <div className={styles.component}>
         <Grid>
             <h1>Mantra.</h1>
             <div className={styles.grid}>
