@@ -1,20 +1,29 @@
 .component {
-	margin-bottom: 180px;
+  margin-bottom: 180px;
+  overflow: hidden;
 }
 
 .component p {
-	font-weight: normal;
-	font-size: 16px;
-	line-height: 180%;
-	/* or 29px */
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 180%;
+  /* or 29px */
 
-	letter-spacing: 0.07em;
-	
-	color: var(--white);
-	margin-bottom: 60px;
+  letter-spacing: 0.07em;
+
+  color: var(--white);
+  margin-bottom: 60px;
+}
+
+.component img {
+  transition: transform 0.3s;
+}
+
+.component img:hover {
+  transform: scale(1.04);
 }
 
 .projectImageComponent {
-	cursor: pointer;
-	overflow: hidden;
+  cursor: pointer;
+  overflow: hidden;
 }

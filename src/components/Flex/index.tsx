@@ -13,6 +13,7 @@ interface Props {
   children?: React.ReactNode
   className?: string
   style?: React.CSSProperties
+  onClick?: React.MouseEventHandler<HTMLDivElement>
 }
 
 export default ({
@@ -29,7 +30,8 @@ export default ({
   wrap,
   children,
   className,
-  style
+  style,
+  onClick,
 }: Props) => (
   <div
     style={{
@@ -53,6 +55,6 @@ export default ({
       flexWrap: wrap && "wrap",
       ...style
     }}
-    {...{ children, className }}
+    {...{ children, className, onClick }}
   />
 );

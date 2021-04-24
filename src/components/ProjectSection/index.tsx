@@ -3,11 +3,16 @@ import Grid from "components/Grid"
 import React from "react"
 import styles from "./styles.module.css"
 
+interface ImageComponent {
+    className?: string;
+}
+
 interface Project {
     technology: string;
     title: string;
     description: string;
-    ImageComponent: React.FC;
+    ImageComponent: React.FC<ImageComponent>;
+    link: string;
 }
 
 interface Props {
@@ -23,7 +28,7 @@ export default ({ title, project }: Props) => (
             <h2>{project.title}</h2>
             <p>{project.description}</p>
         </Grid>
-        <Flex justifyContentCenter style={{ backgroundColor: "var(--gray)", width: "100%" }} className={`${styles.projectImageComponent} scaleOnHover`}>
+        <Flex justifyContentCenter style={{ backgroundColor: "var(--gray)", width: "100%" }} className={styles.projectImageComponent} onClick={() => window.open(project.link)}>
             <project.ImageComponent />
         </Flex>
     </div>
