@@ -1,44 +1,85 @@
 .component {
-	padding-bottom: 42px;
+  height: 100vh;
 }
 
 .component hr {
-	border-color: var(--accent);
-	margin-bottom: 34px;
+  border-color: var(--accent);
+  margin-bottom: 34px;
 }
 
 .label {
-	font-weight: normal;
-	font-size: 19px;
-	line-height: 182.5%;
-	/* identical to box height, or 35px */	
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 182.5%;
+  /* identical to box height, or 35px */
+}
+
+.contactContainer {
+  position: relative;
+  bottom: 8vh;
 }
 
 .email {
-	font-weight: 800;
-	font-size: 48px;
-	line-height: 110%;
-	/* identical to box height, or 53px */
-
-	margin-bottom: 480px;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 110%;
+  /* identical to box height, or 53px */
 }
 
-.link, .linkHeader {
-	font-size: 11px;
-	letter-spacing: 0.04em;
-	line-height: 0px;
-	/* identical to box height, or 0% */
-	margin-bottom: 30px;
+.link,
+.linkHeader {
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  line-height: 0px;
+  /* identical to box height, or 0% */
+  margin-bottom: 30px;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .linkHeader {
-	font-weight: 900;
+  font-weight: 900;
 }
 
 .link {
-	font-weight: 600;
+  font-weight: 600;
+}
+
+.link:last-child {
+  margin-bottom: 72px;
 }
 
 .grid {
-	display: grid;
+  display: grid;
+}
+
+.linkColumnsContainer > div {
+  margin-right: 100px;
+}
+
+@media only screen and (max-width: 570px) {
+  .linkColumnsContainer {
+    justify-content: space-between;
+  }
+  .linkColumnsContainer > div {
+    margin-right: 0px;
+  }
+
+  .component hr {
+    margin-bottom: 24px;
+  }
+
+  .link,
+  .linkHeader {
+    margin-bottom: 28px;
+  }
+
+  .link:last-child {
+    margin-bottom: 50px;
+  }
+
+  .contactContainer {
+    bottom: 4vh;
+  }
 }

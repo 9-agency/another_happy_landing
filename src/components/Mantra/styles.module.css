@@ -1,36 +1,36 @@
 .component {
-	margin-bottom: 300px;
+  margin-bottom: 20vh;
 }
 
 .component h1 {
-	margin-bottom: 100px;
+  margin-bottom: 100px;
 }
 
 .component p {
-	font-size: 16px;
-	line-height: 153.5%;
-	/* or 25px */
+  font-size: 16px;
+  line-height: 153.5%;
+  /* or 25px */
 }
 
 .sectionTitle {
-	font-weight: bold;
-	letter-spacing: 0.07em;
-	margin-bottom: 8px;
+  font-weight: bold;
+  letter-spacing: 0.07em;
+  margin-bottom: 8px;
 }
 
 .sectionDescription {
-	letter-spacing: 0.02em;
+  letter-spacing: 0.02em;
 }
 
 .grid {
-	display: grid;
-	gap: 60px;
-	grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  gap: 60px;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 @media only screen and (max-width: 700px) {
-	.grid {
-		grid-template-columns: repeat(1, 1fr);
-		gap: 80px;
-	}	
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 80px;
+  }
 }
