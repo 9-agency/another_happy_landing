@@ -35,7 +35,7 @@
 	/* or 75px */
 
 	margin-left: -10px;
-
+	z-index: 1;
 
 	color: #E6E6E6;
 }

@@ -10,7 +10,7 @@ export default () => (
     <Flex alignItemsCenter style={{ height: "75%" }}>
       <Grid>
         <p style={{ position: "relative" }} className={styles.headline}>Crafting awesome web <span style={{ color: "var(--accent)" }}>apps.</span></p>
-        <Flex style={{ position: "absolute", zIndex: -1, marginTop: -249, marginLeft: 105 }} justifyContentEnd>
+        <Flex style={{ position: "absolute", marginTop: -249, marginLeft: 105 }} justifyContentEnd>
           <IPhone />
         </Flex>
       </Grid>
