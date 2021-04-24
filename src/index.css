@@ -12,10 +12,11 @@
 }
 
 html, body {
-  background-color: #1f1f1f;
+  background-color: #080808;
 }
 
 body {
+  background: linear-gradient(180deg, #1F1F1F 0%, #080808 100%);
   margin: 0;
   font-family: Raleway, sans-serif;
   -webkit-font-smoothing: antialiased;
