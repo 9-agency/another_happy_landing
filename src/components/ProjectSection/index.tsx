@@ -3,7 +3,7 @@ import Grid from "components/Grid"
 import { useState } from "react"
 import styles from "./styles.module.css"
 
-interface Image {
+interface ImageProps {
     src: string,
     alt: string
 }
@@ -13,7 +13,7 @@ interface Project {
     title: string;
     description: string;
     link: string;
-    image: Image
+    image: ImageProps
 }
 
 interface Props {
@@ -35,7 +35,7 @@ export default ({ title, project }: Props) => (
     </div>
 )
 
-const Image = ({ src, alt }: Image) => {
+const Image = ({ src, alt }: ImageProps) => {
     const [className, setClassName] = useState("transparent")
     return (
         <img
