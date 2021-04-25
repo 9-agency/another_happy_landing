@@ -8,9 +8,10 @@
 }
 
 :root {
-  --space-m: 50px;
-  --animation-duration: .3s;
+  /* animations */
   --fast-animation-duration: .2s;
+  --animation-duration: .3s;
+  --long-animation-duration: .4s;
 }
 
 html,

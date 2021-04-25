@@ -20,10 +20,17 @@
 }
 
 .component img:hover {
-  transform: scale(1.04);
+  transform: scale(1.05);
 }
 
 .projectImageComponent {
   cursor: pointer;
   overflow: hidden;
+  background-color: var(--gray);
+  transition: background-color var(--long-animation-duration);
+  width: 100%;
+}
+
+.projectImageComponent:hover {
+  background-color: #71554C;
 }
