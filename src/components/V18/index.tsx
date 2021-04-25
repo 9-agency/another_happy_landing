@@ -12,6 +12,8 @@ export default () => (
             ImageComponent: () => (
                 <img
                     alt="V18 Rentals"
+                    width={1300}
+                    height={727}
                     {...{ src }}
                 />
             )
