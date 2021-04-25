@@ -12,7 +12,7 @@ const Footer = lazy(() => import("components/Footer"))
 export default () => (
   <>
     <AnimateAppearance>
-      <Landing />
+      <div id="home"><Landing /></div>
     </AnimateAppearance>
     <Suspense fallback={<div />}>
       <div id="react"><V18 /></div>
