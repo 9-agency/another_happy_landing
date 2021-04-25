@@ -16,7 +16,7 @@
 }
 
 .component img {
-  transition: transform 0.3s;
+  transition: transform var(--animation-duration);
 }
 
 .component img:hover {

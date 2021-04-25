@@ -1,6 +1,7 @@
+import AnimateAppearance from "components/AnimateAppearance"
 import Flex from "components/Flex"
 import Grid from "components/Grid"
-import React from "react"
+import React, { Suspense } from "react"
 import styles from "./styles.module.css"
 
 interface ImageComponent {
@@ -29,7 +30,9 @@ export default ({ title, project }: Props) => (
             <p>{project.description}</p>
         </Grid>
         <Flex justifyContentCenter style={{ backgroundColor: "var(--gray)", width: "100%" }} className={styles.projectImageComponent} onClick={() => window.open(project.link)}>
-            <project.ImageComponent />
+            <Suspense fallback={<div />}>
+                <project.ImageComponent />
+            </Suspense>
         </Flex>
     </div>
 )

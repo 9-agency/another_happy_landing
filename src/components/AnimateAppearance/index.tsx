@@ -7,21 +7,6 @@ interface Props {
   className?: string
 }
 
-export default (props: Props) => {
-  const [className, setClassName] = useState("fadeIn")
-
-  useEffect(() => {
-    setClassName("fadeIn")
-    console.log("fadeIn")
-    return () => {
-      console.log("fadeOut")
-      setClassName("fadeOut")
-    }
-  }, [])
-
-  const { id, children } = props
-
-  return (
-    <div className={`${styles.component} ${className} ${props.className}`} {...{ id }}>{children}</div>
-  )
-}
+export default ({ id, children, className }: Props) => (
+  <div className={`${styles.component} ${className} fadeIn`} {...{ id }}>{children}</div>
+)

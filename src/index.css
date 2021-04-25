@@ -9,6 +9,8 @@
 
 :root {
   --space-m: 50px;
+  --animation-duration: .3s;
+  --fast-animation-duration: .2s;
 }
 
 html,
@@ -101,7 +103,7 @@ h3 {
 }
 
 .scaleOnHover {
-  transition: transform 0.3s;
+  transition: transform var(--animation-duration);
 }
 
 .scaleOnHover:hover {
@@ -109,7 +111,7 @@ h3 {
 }
 
 .increaseLetterSpacingOnHover {
-  transition: letter-spacing 0.2s; /* Animation */
+  transition: letter-spacing var(--fast-animation-duration);
 }
 
 .increaseLetterSpacingOnHover:hover {
@@ -118,13 +120,16 @@ h3 {
 
 .fadeIn {
   opacity: 0;
-	animation: fadeIn .8s;
+	animation: fadeIn var(--animation-duration);
 	animation-fill-mode: forwards;
 }
 
+.transparent {
+  opacity: 0;
+}
 
 .fadeOut {
-  animation: fadeOut 2s;
+  animation: fadeOut var(--animation-duration);
 	animation-fill-mode: forwards;
 }
 
