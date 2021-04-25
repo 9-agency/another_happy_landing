@@ -2,10 +2,20 @@
 	height: 100vh;
 	position: relative;
 	overflow: hidden;
+	margin-bottom: -30px;
+}
+
+.component hr {
+	border-top: 11px solid var(--accent);
+	border-bottom: none;
+	width: 100%;
+	position: relative;
+	top: -10px;
+	margin-bottom: -10px;
 }
 
 .header {
-	padding-top: 44px;
+	margin-top: 44px;
 }
 
 .headerLabels p, .headerLabels a {
@@ -30,12 +40,22 @@
 	font-family: Raleway;
 	font-style: normal;
 	font-weight: 800;
-	font-size: 66px;
-	line-height: 113.5%;
+	font-size: 100px;
+	line-height: 110%;
 	/* or 75px */
 
 	margin-left: -10px;
 	z-index: 1;
 
 	color: #E6E6E6;
+}
+
+@media only screen and (max-width: 720px) {
+	.header{
+		margin-top: 34px;
+	}
+
+	.headline {
+		font-size: 48px;
+	}
 }

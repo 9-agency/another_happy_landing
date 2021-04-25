@@ -2,18 +2,22 @@ import Flex from "components/Flex"
 import Grid from "components/Grid"
 import styles from "./styles.module.css"
 import { ReactComponent as Logo } from "assets/logo.svg"
-import { ReactComponent as IPhone } from "assets/iphone_horizontal.svg"
 
 export default () => (
   <div className={styles.component}>
     <Header />
     <Flex alignItemsCenter style={{ height: "75%" }}>
-      <Grid>
-        <p style={{ position: "relative" }} className={styles.headline}>Crafting awesome web <span style={{ color: "var(--accent)" }}>apps.</span></p>
-        <Flex style={{ position: "absolute", marginTop: -249, marginLeft: 105 }} justifyContentEnd>
-          <IPhone />
+      <Flex column style={{ width: "100%", position: "relative" }}>
+        <Flex style={{ width: "100%", position: "absolute", bottom: 15 }}>
+          <Grid>
+            <p className={styles.headline}>Web <span className="fadeInSlow">masterpieces.</span></p>
+          </Grid>
         </Flex>
-      </Grid>
+        <Flex justifyContentEnd style={{ width: "100%" }}>
+          <Logo className="" />
+        </Flex>
+        <hr className="fadeInSlow" />
+      </Flex>
     </Flex>
   </div>
 )
