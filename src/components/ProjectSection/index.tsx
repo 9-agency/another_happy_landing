@@ -1,19 +1,19 @@
-import AnimateAppearance from "components/AnimateAppearance"
 import Flex from "components/Flex"
 import Grid from "components/Grid"
-import React, { Suspense } from "react"
+import { useState } from "react"
 import styles from "./styles.module.css"
 
-interface ImageComponent {
-    className?: string;
+interface Image {
+    src: string,
+    alt: string
 }
 
 interface Project {
     technology: string;
     title: string;
     description: string;
-    ImageComponent: React.FC<ImageComponent>;
     link: string;
+    image: Image
 }
 
 interface Props {
@@ -30,9 +30,20 @@ export default ({ title, project }: Props) => (
             <p>{project.description}</p>
         </Grid>
         <Flex justifyContentCenter style={{ backgroundColor: "var(--gray)", width: "100%" }} className={styles.projectImageComponent} onClick={() => window.open(project.link)}>
-            <Suspense fallback={<div />}>
-                <project.ImageComponent />
-            </Suspense>
+            <Image {...project.image} />
         </Flex>
     </div>
 )
+
+const Image = ({ src, alt }: Image) => {
+    const [className, setClassName] = useState("transparent")
+    return (
+        <img
+            onLoad={() => setClassName("fadeIn")}
+            width={1300}
+            height={727}
+            {...{ src, alt, className }}
+        />
+    )
+}
+
