@@ -22,7 +22,7 @@ export default () => (
         <Flex alignItemsCenter grow className={styles.contactContainer}>
             <Grid>
                 <p className={styles.label}>Get in touch</p>
-                <a className={`${styles.email} increaseLetterSpacingOnHover`} href="mailto:hello@9.agency">hello@9.agency</a>
+                <a className={styles.email} href="mailto:hello@9.agency">hello@9.agency</a>
             </Grid>
         </Flex>
         <div>

@@ -26,6 +26,10 @@
   /* identical to box height, or 53px */
 }
 
+.email:hover {
+  text-decoration: underline;
+}
+
 .link,
 .linkHeader {
   font-size: 11px;
