@@ -18,7 +18,7 @@
 	margin-top: 44px;
 }
 
-.headerLabels p, .headerLabels a {
+.headerLabels a {
 	font-family: Raleway;
 	font-style: normal;
 	font-weight: normal;
@@ -34,6 +34,11 @@
 
 	color: var(--white);
 	margin-left: 30px;
+	transition: color var(--very-fast-animation-duration);
+}
+
+.headerLabels a:hover {
+	color: var(--accent);
 }
 
 .headline {

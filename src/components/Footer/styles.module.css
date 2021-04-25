@@ -44,10 +44,15 @@
 
 .link {
   font-weight: 600;
+  transition: color var(--very-fast-animation-duration);
 }
 
 .link:last-child {
   margin-bottom: 72px;
+}
+
+.link:hover {
+  color: var(--accent);
 }
 
 .grid {

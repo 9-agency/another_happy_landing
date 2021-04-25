@@ -9,6 +9,7 @@
 
 :root {
   /* animations */
+  --very-fast-animation-duration: .1s;
   --fast-animation-duration: .2s;
   --animation-duration: .3s;
   --long-animation-duration: .4s;
