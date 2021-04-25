@@ -2,25 +2,32 @@ import Flex from "components/Flex"
 import Grid from "components/Grid"
 import styles from "./styles.module.css"
 import { ReactComponent as Logo } from "assets/logo.svg"
+import { useState } from "react"
 
-export default () => (
-  <div className={styles.component}>
-    <Header />
-    <Flex alignItemsCenter style={{ height: "75%" }}>
-      <Flex column style={{ width: "100%", position: "relative" }}>
-        <Flex style={{ width: "100%", position: "absolute", bottom: 15 }}>
-          <Grid>
-            <p className={styles.headline}>Web <span className="fadeInSlow">masterpieces.</span></p>
-          </Grid>
+export default () => {
+  const [className, setClassName] = useState("transparent");
+
+  (document as any).fonts.ready.then(() => setClassName("fadeIn"));
+
+  return (
+    <div className={`${styles.component} ${className}`}>
+      <Header />
+      <Flex alignItemsCenter style={{ height: "75%" }}>
+        <Flex column style={{ width: "100%", position: "relative" }}>
+          <Flex style={{ width: "100%", position: "absolute", bottom: 15 }}>
+            <Grid>
+              <p className={styles.headline}>Web <span className="fadeInSlow">masterpieces.</span></p>
+            </Grid>
+          </Flex>
+          <Flex justifyContentEnd style={{ width: "100%" }}>
+            <Logo className="" />
+          </Flex>
+          <hr className="fadeInSlow" />
         </Flex>
-        <Flex justifyContentEnd style={{ width: "100%" }}>
-          <Logo className="" />
-        </Flex>
-        <hr className="fadeInSlow" />
       </Flex>
-    </Flex>
-  </div>
-)
+    </div>
+  )
+}
 
 const Header = () => (
   <header className={styles.header}>
