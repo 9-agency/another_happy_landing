@@ -13,11 +13,10 @@
 
 html,
 body {
-  background-color: #080808;
+  background-color: #1f1f1f;
 }
 
 body {
-  background: linear-gradient(180deg, #1f1f1f 0%, #080808 100%);
   margin: 0;
   font-family: Raleway, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -115,4 +114,26 @@ h3 {
 
 .increaseLetterSpacingOnHover:hover {
   letter-spacing: 0.008em;
+}
+
+.fadeIn {
+  opacity: 0;
+	animation: fadeIn .8s;
+	animation-fill-mode: forwards;
+}
+
+
+.fadeOut {
+  animation: fadeOut 2s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+
+@keyframes fadeOut {
+	0% {opacity:1;}
+	100% {opacity:0;}
 }

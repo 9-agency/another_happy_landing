@@ -1,18 +1,27 @@
 
-import ChessClock from "components/ChessClock";
-import Footer from "components/Footer";
-import HowWeWork from "components/HowWeWork";
+import AnimateAppearance from "components/AnimateAppearance";
 import Landing from "components/Landing";
-import Mantra from "components/Mantra";
-import V18 from "components/V18";
+import { lazy, Suspense } from "react";
+
+const V18 = lazy(() => import("components/V18"))
+const HowWeWork = lazy(() => import("components/HowWeWork"))
+const ChessClock = lazy(() => import("components/ChessClock"))
+const Mantra = lazy(() => import("components/Mantra"))
+const Footer = lazy(() => import("components/Footer"))
 
 export default () => (
   <>
-    <div id="landing"><Landing /></div>
-    <div id="react"><V18 /></div>
-    <div id="howwework"><HowWeWork /></div>
-    <div id="pwa"><ChessClock /></div>
-    <div id="mantra"><Mantra /></div>
-    <div id="footer"><Footer /></div>
+    <Suspense fallback={<div style={{ height: "100vh", backgroundColor: "#1f1f1f" }} />}>
+      <AnimateAppearance>
+        <Landing />
+      </AnimateAppearance>
+    </Suspense>
+    <Suspense fallback={<div />}>
+      <div id="react"><V18 /></div>
+      <div id="howwework"><HowWeWork /></div>
+      <div id="pwa"><ChessClock /></div>
+      <div id="mantra"><Mantra /></div>
+      <div id="footer"><Footer /></div>
+    </Suspense>
   </>
 );
