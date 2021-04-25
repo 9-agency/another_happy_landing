@@ -1,5 +1,4 @@
 import styles from "./styles.module.css"
-import { useEffect, useState } from "react"
 
 interface Props {
   children?: React.ReactNode
