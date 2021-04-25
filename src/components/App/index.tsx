@@ -11,11 +11,9 @@ const Footer = lazy(() => import("components/Footer"))
 
 export default () => (
   <>
-    <Suspense fallback={<div style={{ height: "100vh", backgroundColor: "#1f1f1f" }} />}>
-      <AnimateAppearance>
-        <Landing />
-      </AnimateAppearance>
-    </Suspense>
+    <AnimateAppearance>
+      <Landing />
+    </AnimateAppearance>
     <Suspense fallback={<div />}>
       <div id="react"><V18 /></div>
       <div id="howwework"><HowWeWork /></div>
