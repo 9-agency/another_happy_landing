@@ -48,5 +48,5 @@ export default () => (
     </Flex>
 )
 
-const Link = ({ label, href, openInNewTab }: { label: string, href: string, openInNewTab?: boolean }) => <a {...openInNewTab && { target: "_blank" }} {...{ href }} className={styles.link}>{label}</a>
+const Link = ({ label, href, openInNewTab }: { label: string, href: string, openInNewTab?: boolean }) => <a {...openInNewTab && { target: "_blank" }} {...{ href }} className={styles.link} rel="noopener">{label}</a>
 
