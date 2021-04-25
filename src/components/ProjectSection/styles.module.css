@@ -20,7 +20,7 @@
 }
 
 .component img:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 .projectImageComponent {
@@ -32,5 +32,5 @@
 }
 
 .projectImageComponent:hover {
-  background-color: #71554C;
+  background-color: var(--black);
 }
