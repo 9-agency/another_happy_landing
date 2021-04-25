@@ -21,8 +21,7 @@ export default () => (
 const Header = () => (
   <header className={styles.header}>
     <Grid>
-      <Flex justifyContentSpaceBetween alignItemsCenter>
-        <Logo />
+      <Flex justifyContentEnd>
         <Flex className={styles.headerLabels}>
           <a href="#react">PORTFOLIO</a>
           <a href="mailto:hello@9.agency">CONTACT</a>
