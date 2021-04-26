@@ -25,8 +25,8 @@ export default ({ title, project }: Props) => (
     <div className={styles.component}>
         <Grid>
             <h1>{title}</h1>
-            <h3>{project.technology}</h3>
-            <h2>{project.title}</h2>
+            <h2>{project.technology}</h2>
+            <h3>{project.title}</h3>
             <p>{project.description}</p>
         </Grid>
         <Flex justifyContentCenter className={styles.projectImageComponent} onClick={() => window.open(project.link)}>

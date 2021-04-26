@@ -78,7 +78,20 @@ h1 {
   margin-bottom: 120px;
 }
 
+
 h2 {
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 130%;
+  /* identical to box height, or 17px */
+
+  letter-spacing: 0.2em;
+
+  color: var(--accent);
+  margin-bottom: 30px;
+}
+
+h3 {
   font-weight: normal;
   font-size: 48px;
   line-height: 130%;
@@ -89,18 +102,6 @@ h2 {
   color: var(--light);
   margin-bottom: 28px;
   max-width: 750px;
-}
-
-h3 {
-  font-weight: bold;
-  font-size: 13px;
-  line-height: 130%;
-  /* identical to box height, or 17px */
-
-  letter-spacing: 0.2em;
-
-  color: var(--accent);
-  margin-bottom: 30px;
 }
 
 .scaleOnHover {
