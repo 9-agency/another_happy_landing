@@ -34,7 +34,7 @@ const Header = () => (
     <Grid>
       <Flex justifyContentEnd>
         <Flex className={styles.headerLabels}>
-          <a href="#react">PORTFOLIO</a>
+          <a href="#portfolio">PORTFOLIO</a>
           <a href="mailto:hello@9.agency">CONTACT</a>
         </Flex>
       </Flex>

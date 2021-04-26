@@ -12,8 +12,10 @@ export default () => (
   <>
     <div id="home"><Landing /></div>
     <Suspense fallback={<div />}>
-      <div id="react"><V18 /></div>
-      <div id="pwa"><ChessClock /></div>
+      <div id="portfolio">
+        <div id="react"><V18 /></div>
+        <div id="pwa"><ChessClock /></div>
+      </div>
       <div id="howwework"><HowWeWork /></div>
       <div id="mantra"><Mantra /></div>
       <div id="footer"><Footer /></div>
