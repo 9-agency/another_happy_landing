@@ -2,23 +2,13 @@
 import Landing from "components/Landing";
 import { lazy, Suspense } from "react";
 
-const V18 = lazy(() => import("components/V18"))
-const HowWeWork = lazy(() => import("components/HowWeWork"))
-const ChessClock = lazy(() => import("components/ChessClock"))
-const Mantra = lazy(() => import("components/Mantra"))
-const Footer = lazy(() => import("components/Footer"))
+const BelowLanding = lazy(() => import("components/BelowLanding"))
 
 export default () => (
   <>
     <div id="home"><Landing /></div>
     <Suspense fallback={<div />}>
-      <div id="portfolio">
-        <div id="react"><V18 /></div>
-        <div id="pwa"><ChessClock /></div>
-      </div>
-      <div id="howwework"><HowWeWork /></div>
-      <div id="mantra"><Mantra /></div>
-      <div id="footer"><Footer /></div>
+      <BelowLanding />
     </Suspense>
   </>
 );
