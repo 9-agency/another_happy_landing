@@ -27,13 +27,13 @@
 .projectImageComponent {
   cursor: pointer;
   overflow: hidden;
-  background-color: var(--gray);
+  background-color: #271818;
   transition: background-color var(--long-animation-duration);
   width: 100%;
 }
 
 .projectImageComponent:hover {
-  background-color: var(--black);
+  background-color:  #afead9;
 }
 
 @media only screen and (max-width: 414px) {

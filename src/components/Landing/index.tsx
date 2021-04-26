@@ -16,13 +16,13 @@ export default () => {
         <Flex column style={{ width: "100%", position: "relative" }}>
           <Flex style={{ width: "100%", position: "absolute", bottom: 15 }}>
             <Grid>
-              <p className={styles.headline}>Web <span className="fadeInSlow">masterpieces.</span></p>
+              <p className={styles.headline}>Web apps <div className="fadeInSlow">done right.</div></p>
             </Grid>
           </Flex>
           <Flex justifyContentEnd style={{ width: "100%" }}>
-            <Logo className="" />
+            <Logo></Logo>
           </Flex>
-          <hr className="fadeInSlow" />
+          <Grid> <div className={`${styles.logo_stripe} ${styles.resetTranslation}`}></div></Grid>
         </Flex>
       </Flex>
     </div>

@@ -18,6 +18,15 @@
 	margin-top: 44px;
 }
 
+.logo_stripe {
+	background-color: var(--accent);
+	position: absolute;
+	bottom: 0%;
+	height: 10px;
+	width: 100vw;
+	transform: translateX(100vw);
+}
+
 .headerLabels a {
 	font-family: Raleway;
 	font-style: normal;
@@ -63,4 +72,14 @@
 	.headline {
 		font-size: 48px;
 	}
+}
+
+.resetTranslation {
+	animation: resetTranslation .9s ease-in-out;
+  	animation-delay: var(--long-animation-duration);
+	animation-fill-mode: forwards;
+}
+
+@keyframes resetTranslation {
+	to { transform: translateX(0) }
 }
