@@ -16,6 +16,7 @@
 }
 
 .component img {
+  object-fit: contain;
   transition: transform var(--animation-duration);
 }
 
@@ -33,4 +34,10 @@
 
 .projectImageComponent:hover {
   background-color: var(--black);
+}
+
+@media only screen and (max-width: 414px) {
+  .component img {
+    height: 60vh;
+  }
 }
