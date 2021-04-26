@@ -1,5 +1,6 @@
 import styles from "./styles.module.css"
 import Grid from "components/Grid"
+import { withIndexKey } from "helpers"
 
 const sections = [
     {
@@ -29,7 +30,7 @@ export default () => (
         <Grid>
             <h1>Mantra.</h1>
             <div className={styles.grid}>
-                {sections.map(section)}
+                {sections.map(section).map(withIndexKey)}
             </div>
         </Grid>
     </div>

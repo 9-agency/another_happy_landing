@@ -1,6 +1,7 @@
 import styles from "./styles.module.css"
 import Grid from "components/Grid";
 import Flex from "components/Flex";
+import { withIndexKey } from "helpers";
 
 const sectionTitles = ["HOME", "HOW WE WORK", "MANTRA"]
 
@@ -31,16 +32,16 @@ export default () => (
                 <Flex className={styles.linkColumnsContainer}>
                     <Flex column>
                         <p className={styles.linkHeader}>SITEMAP</p>
-                        {sectionTitles.map(title => <Link label={title} href={`#${title.split(" ").join("").toLowerCase()}`} />)}
+                        {sectionTitles.map(title => <Link label={title} href={`#${title.split(" ").join("").toLowerCase()}`} />).map(withIndexKey)}
                         <Link label="CONTACT" href="mailto:hello@9.agency" />
                     </Flex>
                     <Flex column >
                         <p className={styles.linkHeader}>TECHNOLOGIES</p>
-                        {technologySectionTitles.map(title => <Link label={title} href={`#${title.split(" ").join("").toLowerCase()}`} />)}
+                        {technologySectionTitles.map(title => <Link label={title} href={`#${title.split(" ").join("").toLowerCase()}`} />).map(withIndexKey)}
                     </Flex>
                     <Flex column>
                         <p className={styles.linkHeader}>OTHER SITES</p>
-                        {otherSites.map(Link)}
+                        {otherSites.map(Link).map(withIndexKey)}
                     </Flex>
                 </Flex>
             </Grid>
