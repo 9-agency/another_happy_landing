@@ -27,6 +27,11 @@
 	transform: translateX(100vw);
 }
 
+
+.logo {
+	transform: translateX(100vw);
+}
+
 .headerLabels a {
 	font-family: Raleway;
 	font-style: normal;
