@@ -8,9 +8,10 @@
 }
 
 .label {
-  font-weight: normal;
+  font-weight: bold;
   font-size: 19px;
   line-height: 182.5%;
+  color: var(--light);
   /* identical to box height, or 35px */
 }
 
@@ -49,6 +50,7 @@
 .link {
   font-weight: 600;
   transition: color var(--very-fast-animation-duration);
+  color: var(--light);
 }
 
 .link:last-child {
@@ -65,6 +67,26 @@
 
 .linkColumnsContainer > div {
   margin-right: 100px;
+}
+
+.accentLine {
+  background-color: var(--accent);
+  height: 2px;
+}
+
+.logo {
+  height: 30px;
+  width: 30px;
+  margin: 16px;
+}
+
+.imageLink:hover * {
+  fill: var(--light);
+}
+
+.imageLink * {
+  fill: var(--accent);
+	transition: fill 0.25s;
 }
 
 @media only screen and (max-width: 570px) {

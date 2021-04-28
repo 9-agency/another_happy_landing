@@ -85,6 +85,12 @@
 	animation-fill-mode: forwards;
 }
 
+.resetTranslationDelayed {
+	animation: resetTranslation .9s ease-in-out;
+  	animation-delay: calc(2 * var(--long-animation-duration));
+	animation-fill-mode: forwards;
+}
+
 @keyframes resetTranslation {
 	to { transform: translateX(0) }
 }
