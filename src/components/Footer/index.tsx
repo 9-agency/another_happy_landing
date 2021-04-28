@@ -27,7 +27,7 @@ export default () => (
             </Grid>
         </Flex>
         <div>
-            <hr />
+            <Grid><hr /></Grid>
             <Grid>
                 <Flex className={styles.linkColumnsContainer}>
                     <Flex column>
@@ -35,14 +35,14 @@ export default () => (
                         {sectionTitles.map(title => <Link label={title} href={`#${title.split(" ").join("").toLowerCase()}`} />).map(withIndexKey)}
                         <Link label="CONTACT" href="mailto:hello@9.agency" />
                     </Flex>
-                    <Flex column >
+                    {/* <Flex column >
                         <p className={styles.linkHeader}>TECHNOLOGIES</p>
                         {technologySectionTitles.map(title => <Link label={title} href={`#${title.split(" ").join("").toLowerCase()}`} />).map(withIndexKey)}
                     </Flex>
                     <Flex column>
                         <p className={styles.linkHeader}>OTHER SITES</p>
                         {otherSites.map(Link).map(withIndexKey)}
-                    </Flex>
+                    </Flex> */}
                 </Flex>
             </Grid>
         </div>
