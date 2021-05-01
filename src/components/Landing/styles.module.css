@@ -1,90 +1,86 @@
 .component {
-	height: 100vh;
-	position: relative;
-	overflow: hidden;
-	margin-bottom: -30px;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: -30px;
 }
 
 .component hr {
-	border-top: 11px solid var(--accent);
-	border-bottom: none;
-	width: 100%;
-	position: relative;
-	top: -10px;
-	margin-bottom: -10px;
+  border-top: 11px solid var(--accent);
+  border-bottom: none;
+  width: 100%;
+  position: relative;
+  top: -10px;
+  margin-bottom: -10px;
 }
 
 .header {
-	margin-top: 44px;
+  margin-top: 44px;
 }
 
 .logo_stripe {
-	background-color: var(--accent);
-	position: absolute;
-	bottom: 0%;
-	height: 10px;
-	width: 100vw;
-	transform: translateX(100vw);
-}
-
-
-.logo {
-	transform: translateX(100vw);
+  background-color: var(--accent);
+  position: absolute;
+  bottom: 0%;
+  height: 10px;
+  width: 100vw;
+  transform: translateX(100vw);
 }
 
 .headerLabels a {
-	font-family: Raleway;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 13px;
-	line-height: 101.1%;
-	/* or 13px */
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 101.1%;
+  /* or 13px */
 
-	display: flex;
-	align-items: center;
-	text-align: center;
-	letter-spacing: 0.07em;
-	font-variant: small-caps;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.07em;
+  font-variant: small-caps;
 
-	color: var(--white);
-	margin-left: 30px;
-	transition: color var(--very-fast-animation-duration);
+  color: var(--white);
+  margin-left: 30px;
+  transition: color var(--very-fast-animation-duration);
 }
 
 .headerLabels a:hover {
-	color: var(--accent);
+  color: var(--accent);
 }
 
 .headline {
-	font-family: Raleway;
-	font-style: normal;
-	font-weight: 800;
-	font-size: 96px;
-	line-height: 110%;
-	/* or 75px */
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 96px;
+  line-height: 110%;
+  /* or 75px */
 
-	margin-left: -10px;
-	z-index: 1;
+  margin-left: -10px;
+  z-index: 1;
 
-	color: #E6E6E6;
+  color: #e6e6e6;
 }
 
 @media only screen and (max-width: 720px) {
-	.header{
-		margin-top: 34px;
-	}
+  .header {
+    margin-top: 34px;
+  }
 
-	.headline {
-		font-size: 48px;
-	}
+  .headline {
+    font-size: 48px;
+  }
 }
 
 .resetTranslation {
-	animation: resetTranslation .9s ease-in-out;
-  	animation-delay: var(--long-animation-duration);
-	animation-fill-mode: forwards;
+  animation: resetTranslation 0.7s ease-in-out;
+  animation-fill-mode: forwards;
 }
 
 @keyframes resetTranslation {
-	to { transform: translateX(0) }
+  to {
+    transform: translateX(0);
+  }
 }

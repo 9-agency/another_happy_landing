@@ -20,7 +20,7 @@ export default () => {
             </Grid>
           </Flex>
           <Flex justifyContentEnd style={{ width: "100%" }}>
-            <Logo className={`${styles.logo} ${styles.resetTranslation}`}></Logo>
+            <Logo />
           </Flex>
           <Grid> <div className={`${styles.logo_stripe} ${styles.resetTranslation}`}></div></Grid>
         </Flex>
