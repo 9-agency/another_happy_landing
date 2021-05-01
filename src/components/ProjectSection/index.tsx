@@ -5,14 +5,14 @@ import styles from "./styles.module.css"
 interface ImageProps {
     src: string,
     alt: string,
-    highlightColor: string
+    href: string,
+    openInNewTab?: boolean
 }
 
 interface Project {
     technology: string;
     title: string;
     description: string;
-    link: string;
     image: ImageProps
 }
 
@@ -33,15 +33,17 @@ export default ({ title, project }: Props) => (
     </div>
 )
 
-const Image = ({ src, alt }: ImageProps) => {
+const Image = ({ src, alt, href, openInNewTab }: ImageProps) => {
     const [className, setClassName] = useState("transparent")
     return (
-        <img
-            onLoad={() => setClassName("fadeIn")}
-            width={940}
-            height={670}
-            {...{ src, alt, className }}
-        />
+        <a {...{ href, ...openInNewTab && { target: "_blank" } }}>
+            <img
+                onLoad={() => setClassName("fadeIn")}
+                width={940}
+                height={670}
+                {...{ src, alt, className }}
+            />
+        </a>
     )
 }
 

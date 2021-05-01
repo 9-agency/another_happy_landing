@@ -19,7 +19,6 @@
   width: calc(100% + 2 * 30px);
   object-fit: contain;
   object-position: top left;
-  cursor: pointer;
   transition: transform var(--fast-animation-duration) ease-out;
 }
 
