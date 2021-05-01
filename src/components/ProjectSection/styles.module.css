@@ -17,6 +17,7 @@
 .component img {
   margin: 0px -30px;
   width: calc(100% + 2 * 30px);
+  height: auto;
   object-fit: contain;
   object-position: top left;
   transition: transform var(--fast-animation-duration) ease-out;
@@ -34,8 +35,9 @@
   width: 100%;
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 940px) {
   .component img {
-    height: 60vh;
+    margin: 0px -10px;
+    width: calc(100% + 2 * 10px);
   }
 }
