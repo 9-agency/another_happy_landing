@@ -35,6 +35,7 @@ const Header = () => (
       <Flex justifyContentEnd>
         <Flex className={styles.headerLabels}>
           <a href="#portfolio">PORTFOLIO</a>
+          <a href="#mantra">MANTRA</a>
           <a href="mailto:hello@9.agency">CONTACT</a>
         </Flex>
       </Flex>

@@ -16,19 +16,13 @@ interface Project {
     image: ImageProps
 }
 
-interface Props {
-    title: string;
-    project: Project;
-}
-
-export default ({ title, project }: Props) => (
+export default ({ technology, title, description, image }: Project) => (
     <div className={styles.component}>
         <Grid>
-            <h1>{title}</h1>
-            <h2>{project.technology}</h2>
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
-            <Image {...project.image} />
+            <h2>{technology}</h2>
+            <h3>{title}</h3>
+            <p>{description}</p>
+            <Image {...image} />
         </Grid>
     </div>
 )
