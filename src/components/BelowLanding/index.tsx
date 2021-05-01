@@ -13,7 +13,6 @@ export default () => (
       <div id="pwa"><ChessClock /></div>
       <div id="codesplitting"><NineAgency /></div>
     </div>
-    <div id="howwework"><HowWeWork /></div>
     <div id="mantra"><Mantra /></div>
     <div id="footer"><Footer /></div>
   </>

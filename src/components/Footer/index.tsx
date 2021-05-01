@@ -3,7 +3,7 @@ import Grid from "components/Grid";
 import Flex from "components/Flex";
 import { withIndexKey } from "helpers";
 
-const sectionTitles = ["HOME", "PORTFOLIO", "HOW WE WORK", "MANTRA"]
+const sectionTitles = ["HOME", "PORTFOLIO", "MANTRA"]
 
 const technologySectionTitles = ["REACT", "PWA", "CODE SPLITTING"]
 
