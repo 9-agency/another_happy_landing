@@ -1,6 +1,5 @@
 .component {
   margin-bottom: 180px;
-  overflow: hidden;
 }
 
 .component p {
@@ -16,12 +15,16 @@
 }
 
 .component img {
+  margin: 0px -30px;
+  width: calc(100% + 2 * 30px);
   object-fit: contain;
-  transition: transform var(--animation-duration);
+  object-position: top left;
+  cursor: pointer;
+  transition: transform var(--fast-animation-duration) ease-out;
 }
 
 .component img:hover {
-  transform: scale(1.1);
+  transform: scale(1.06);
 }
 
 .projectImageComponent {
