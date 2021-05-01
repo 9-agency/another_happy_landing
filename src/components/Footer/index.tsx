@@ -5,7 +5,7 @@ import { withIndexKey } from "helpers";
 
 const sectionTitles = ["HOME", "PORTFOLIO", "HOW WE WORK", "MANTRA"]
 
-const technologySectionTitles = ["REACT", "PWA"]
+const technologySectionTitles = ["REACT", "PWA", "CODE SPLITTING"]
 
 const otherSites = [
     {
