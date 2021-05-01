@@ -30,7 +30,7 @@ export default ({ technology, title, description, image }: Project) => (
 const Image = ({ src, alt, href, openInNewTab }: ImageProps) => {
     const [className, setClassName] = useState("transparent")
     return (
-        <a {...{ href, ...openInNewTab && { target: "_blank" } }}>
+        <a {...{ href, ...openInNewTab && { target: "_blank" } }} rel="noopener" >
             <img
                 onLoad={() => setClassName("fadeIn")}
                 width={940}
