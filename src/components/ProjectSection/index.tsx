@@ -40,7 +40,7 @@ const Image = ({ src, alt, href, openInNewTab }: ImageProps) => {
             <img
                 onLoad={() => setClassName("fadeIn")}
                 width={940}
-                height="auto"
+                height={670}
                 {...{ src, alt, className }}
             />
         </a>

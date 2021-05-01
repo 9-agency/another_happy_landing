@@ -1,7 +1,6 @@
 
 import V18 from "components/V18";
 import Mantra from "components/Mantra";
-import HowWeWork from "components/HowWeWork";
 import Footer from "components/Footer";
 import ChessClock from "components/ChessClock";
 import NineAgency from "components/NineAgency";
