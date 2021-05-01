@@ -27,13 +27,9 @@
 .projectImageComponent {
   cursor: pointer;
   overflow: hidden;
-  background-color: #271818;
+  background-color: rgba(255, 255, 255, 0.1);
   transition: background-color var(--long-animation-duration);
   width: 100%;
-}
-
-.projectImageComponent:hover {
-  background-color:  #afead9;
 }
 
 @media only screen and (max-width: 414px) {

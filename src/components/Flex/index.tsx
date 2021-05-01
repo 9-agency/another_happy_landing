@@ -14,6 +14,8 @@ interface Props {
   className?: string
   style?: React.CSSProperties
   onClick?: React.MouseEventHandler<HTMLDivElement>
+  onMouseEnter?: React.MouseEventHandler<HTMLDivElement>
+  onMouseLeave?: React.MouseEventHandler<HTMLDivElement>
 }
 
 export default ({
@@ -32,6 +34,8 @@ export default ({
   className,
   style,
   onClick,
+  onMouseEnter,
+  onMouseLeave,
 }: Props) => (
   <div
     style={{
@@ -55,6 +59,6 @@ export default ({
       flexWrap: wrap && "wrap",
       ...style
     }}
-    {...{ children, className, onClick }}
+    {...{ children, className, onClick, onMouseEnter, onMouseLeave }}
   />
 );

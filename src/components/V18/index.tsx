@@ -11,7 +11,8 @@ export default () => (
             link: "https://www.v18rentals.com/",
             image: {
                 src,
-                alt: "V18 Rentals"
+                alt: "V18 Rentals",
+                highlightColor: "#8FE9A8"
             }
         }}
     />

@@ -11,7 +11,8 @@ export default () => (
             link: "https://chessclock.live/#/",
             image: {
                 src,
-                alt: "Chess Clock"
+                alt: "Chess Clock",
+                highlightColor: "#F8C9A0"
             }
         }}
     />
