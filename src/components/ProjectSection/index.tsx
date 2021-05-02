@@ -33,8 +33,8 @@ const Image = ({ src, alt, href, openInNewTab }: ImageProps) => {
         <a {...{ href, ...openInNewTab && { target: "_blank" } }} rel="noopener" >
             <img
                 onLoad={() => setClassName("fadeIn")}
-                width={940}
-                height={670}
+                width={880}
+                height={522}
                 {...{ src, alt, className }}
             />
         </a>
