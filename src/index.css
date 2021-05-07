@@ -160,3 +160,19 @@ h3 {
     opacity: 0;
   }
 }
+
+#animateableSection {
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+@keyframes translateY {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}

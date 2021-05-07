@@ -7,12 +7,12 @@ import NineAgency from "components/NineAgency";
 import Grid from "components/Grid";
 import { useEffect } from "react";
 
-const options = {
-  threshold: 0
-}
+const options = {}
 
-const callback: IntersectionObserverCallback = (entries, observer) => {
-  entries.filter(entry => entry.isIntersecting).map(console.log)
+const callback: IntersectionObserverCallback = (entries, _observer) => {
+  entries.filter(entry => entry.isIntersecting).map(entry => {
+    (entry as any).target.style.animation = "translateY var(--fast-animation-duration) forwards ease-in-out";
+  })
 }
 
 const observer = new IntersectionObserver(callback, options)
