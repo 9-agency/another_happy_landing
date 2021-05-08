@@ -19,7 +19,7 @@ const translateIntersectionObserver = new IntersectionObserver(translateIntersec
 
 const scaleIntersectionObserverCallback: IntersectionObserverCallback = (entries, _observer) => {
   entries.filter(entry => entry.isIntersecting).map(entry => {
-    (entry as any).target.style.animation = "scaleSectionAnimation .2s .1s forwards ease-out";
+    (entry as any).target.style.animation = "scaleSectionAnimation .2s forwards ease-out";
   })
 }
 
@@ -27,7 +27,7 @@ const scaleIntersectionObserver = new IntersectionObserver(scaleIntersectionObse
 
 const fadeInIntersectionObserverCallback: IntersectionObserverCallback = (entries, _observer) => {
   entries.filter(entry => entry.isIntersecting).map(entry => {
-    (entry as any).target.style.animation = "fadeInSectionAnimation .6s .5s forwards ease-out";
+    (entry as any).target.style.animation = "fadeInSectionAnimation .5s .5s forwards ease-out";
   })
 }
 
