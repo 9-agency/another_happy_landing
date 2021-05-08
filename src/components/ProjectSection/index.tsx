@@ -17,13 +17,15 @@ interface Project {
 }
 
 export default ({ technology, title, description, image }: Project) => (
-    <div id="scaleSection" className={styles.component}>
-        <Grid>
-            <h2>{technology}</h2>
-            <h3>{title}</h3>
-            <p>{description}</p>
-            <Image {...image} />
-        </Grid>
+    <div className={styles.component} style={{overflow: "hidden"}}>
+        <div id="scaleSection">
+            <Grid>
+                <h2>{technology}</h2>
+                <h3>{title}</h3>
+                <p>{description}</p>
+                <Image {...image} />
+            </Grid>
+        </div>
     </div>
 )
 
