@@ -180,6 +180,7 @@ h3 {
 #scaleSection {
   opacity: 0;
   transform: scale(1.06);
+  padding: .6em;
 }
 
 @keyframes scaleSectionAnimation {
