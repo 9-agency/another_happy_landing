@@ -161,18 +161,47 @@ h3 {
   }
 }
 
-#animateableSection {
+#translateSection {
   opacity: 0;
-  transform: translateY(100px);
+  transform: translateX(-100px);
 }
 
-@keyframes translateY {
+@keyframes translateSectionAnimation {
   from {
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateX(-100px);
   }
   to {
-    transform: translateY(0px);
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+#scaleSection {
+  opacity: 0;
+  transform: scale(1.06);
+}
+
+@keyframes scaleSectionAnimation {
+  from {
+    opacity: 0;
+    transform: scale(1.06);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+#fadeInSection {
+  opacity: 0;
+}
+
+@keyframes fadeInSectionAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
     opacity: 1;
   }
 }

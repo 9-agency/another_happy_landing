@@ -17,7 +17,7 @@ interface Project {
 }
 
 export default ({ technology, title, description, image }: Project) => (
-    <div className={styles.component}>
+    <div id="scaleSection" className={styles.component}>
         <Grid>
             <h2>{technology}</h2>
             <h3>{title}</h3>

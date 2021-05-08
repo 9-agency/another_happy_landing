@@ -37,7 +37,7 @@ export default () => (
 )
 
 const section = ({ title, description }: { title: string, description: string }) => (
-    <div>
+    <div id="translateSection">
         <p className={styles.sectionTitle}>{title}</p>
         <p className={styles.sectionDescription}>{description}</p>
     </div>
