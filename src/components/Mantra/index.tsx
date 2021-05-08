@@ -29,7 +29,7 @@ export default () => (
     <div className={styles.component}>
         <Grid>
             <h1>Mantra.</h1>
-            <div className={styles.grid}>
+            <div className={styles.grid} id="translateSection">
                 {sections.map(section).map(withIndexKey)}
             </div>
         </Grid>
@@ -37,7 +37,7 @@ export default () => (
 )
 
 const section = ({ title, description }: { title: string, description: string }) => (
-    <div id="translateSection">
+    <div>
         <p className={styles.sectionTitle}>{title}</p>
         <p className={styles.sectionDescription}>{description}</p>
     </div>
