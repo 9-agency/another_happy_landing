@@ -6,7 +6,7 @@ import ChessClock from "components/ChessClock";
 import NineAgency from "components/NineAgency";
 import Grid from "components/Grid";
 import { useEffect } from "react";
-import intersectionObserverSetup from "intersectionObserverSetup";
+import intersectionObserverSetup from "components/sectionIntersection";
 
 export default () => {
   useEffect(intersectionObserverSetup, [])

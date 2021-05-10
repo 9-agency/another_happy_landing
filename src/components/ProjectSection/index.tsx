@@ -18,7 +18,7 @@ interface Project {
 
 export default ({ technology, title, description, image }: Project) => (
     <div className={styles.component} style={{overflow: "hidden"}}>
-        <div id="scaleSection">
+        <div id="fadeInSection">
             <Grid>
                 <h2>{technology}</h2>
                 <h3>{title}</h3>

@@ -180,7 +180,7 @@ h3 {
 #scaleSection {
   opacity: 0;
   transform: scale(1.06);
-  padding: .6em;
+  padding: 0.6em;
 }
 
 @keyframes scaleSectionAnimation {
@@ -196,6 +196,7 @@ h3 {
 
 #fadeInSection {
   opacity: 0;
+  transform: translateY(1%);
 }
 
 @keyframes fadeInSectionAnimation {
@@ -204,5 +205,6 @@ h3 {
   }
   to {
     opacity: 1;
+    transform: translateY(0%);
   }
 }

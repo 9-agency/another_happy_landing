@@ -29,7 +29,7 @@ export default () => (
     <div className={styles.component}>
         <Grid>
             <h1>Mantra.</h1>
-            <div className={styles.grid} id="translateSection">
+            <div className={styles.grid} id="fadeInSection">
                 {sections.map(section).map(withIndexKey)}
             </div>
         </Grid>
