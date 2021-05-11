@@ -29,8 +29,8 @@ export default () => (
             </Grid>
         </Flex>
         <div>
-            <hr />
             <Grid>
+                <div className={styles.footer_separator}/>
                 <Flex className={styles.linkColumnsContainer}>
                     <Flex column>
                         <p className={styles.linkHeader}>SITEMAP</p>

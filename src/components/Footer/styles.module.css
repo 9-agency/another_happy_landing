@@ -36,7 +36,10 @@
   letter-spacing: 0.04em;
   line-height: 0px;
   /* identical to box height, or 0% */
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
+  margin-top: 15px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
 
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -100,4 +103,12 @@
   .contactContainer {
     bottom: 4vh;
   }
+}
+
+.footer_separator {
+  position: static;
+  height: 4px;
+  width: 100vw;
+  margin-bottom: 10px;
+  background-color: var(--accent);
 }
