@@ -21,10 +21,18 @@
 .logo_stripe {
   background-color: var(--accent);
   position: absolute;
-  bottom: 0%;
-  height: 10px;
-  width: 100vw;
-  transform: translateX(100vw);
+  height: 6px;
+  width: 100%;
+  bottom: 2%;
+  z-index: -1;
+  transform-origin: center;
+  transform: scaleX(0)
+}
+
+.logo {
+  color: var(--accent);
+  position: relative;
+  transform: scale(0.1) rotate(0.95turn);
 }
 
 .headerLabels a {
@@ -75,12 +83,12 @@
 }
 
 .resetTranslation {
-  animation: resetTranslation 0.7s ease-in-out;
+  animation: resetTranslation 0.6s ease-in-out;
   animation-fill-mode: forwards;
 }
 
 @keyframes resetTranslation {
   to {
-    transform: translateX(-14px);
+    transform: scaleX(1)
   }
 }

@@ -12,17 +12,12 @@ export default () => {
   return (
     <div className={`${styles.component} ${className}`}>
       <Header />
-      <Flex alignItemsCenter style={{ height: "75%" }}>
-        <Flex column style={{ width: "100%", position: "relative" }}>
-          <Flex style={{ width: "100%", position: "absolute", bottom: 15 }}>
-            <Grid>
-              <p className={styles.headline}>Web<div className="fadeInSlow">masterpieces.</div></p>
+      <Flex alignItemsCenter style={{ height: "80%" }}>
+        <Flex column style={{ width: "100%"}}>
+            <Grid style={{position: "relative"}}>
+              <p className={styles.headline}>We design and build great digital products.</p>
+              <div className={`${styles.logo_stripe} ${styles.resetTranslation}`}></div>
             </Grid>
-          </Flex>
-          <Flex justifyContentEnd style={{ width: "100%" }}>
-            <Logo />
-          </Flex>
-          <Grid> <div className={`${styles.logo_stripe} ${styles.resetTranslation}`}></div></Grid>
         </Flex>
       </Flex>
     </div>

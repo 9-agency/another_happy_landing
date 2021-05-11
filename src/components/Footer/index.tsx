@@ -22,10 +22,7 @@ export default () => (
     <Flex column justifyContentSpaceBetween className={styles.component}>
         <Flex alignItemsCenter grow className={styles.contactContainer}>
             <Grid>
-                <div id="fadeInSection">
-                    <p className={styles.label}>Get in touch</p>
-                    <a className={styles.email} href="mailto:hello@9.agency">hello@9.agency</a>
-                </div>
+                <a className={styles.email} href="mailto:hello@9.agency">hello@9.agency</a>
             </Grid>
         </Flex>
         <div>
