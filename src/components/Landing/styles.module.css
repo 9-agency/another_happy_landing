@@ -38,16 +38,14 @@
 .headerLabels a {
   font-family: Raleway;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 600;
   font-size: 13px;
-  line-height: 101.1%;
   /* or 13px */
 
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.07em;
-  font-variant: small-caps;
 
   color: var(--white);
   margin-left: 30px;
