@@ -22,7 +22,7 @@
   background-color: var(--accent);
   position: absolute;
   bottom: 0%;
-  height: 4px;
+  height: 8px;
   width: 100vw;
   transform: translateX(100vw);
 }
