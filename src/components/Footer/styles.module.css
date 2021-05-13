@@ -107,8 +107,8 @@
 
 .footer_separator {
   position: static;
-  height: 4px;
-  width: 100vw;
+  height: 2px;
+  width: 100%;
   margin-bottom: 10px;
   background-color: var(--accent);
 }
